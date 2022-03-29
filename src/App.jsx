@@ -71,6 +71,7 @@ import AvatarPage from "./pages/component/AvatarPage";
 import TooltipPage from "./pages/component/TooltipPage";
 import AccordionPage from "./pages/component/AccordionPage";
 import IconsPage from "./pages/component/IconsPage";
+import Yields from "./pages/Yields";
 
 function App() {
   const location = useLocation();
@@ -85,6 +86,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Pools />} />
+        <Route exact path="/yields" element={<Yields />} />
         <Route path="/dashboard/analytics" element={<Analytics />} />
         <Route path="/dashboard/fintech" element={<Fintech />} />
         <Route path="/ecommerce/customers" element={<Customers />} />

@@ -97,7 +97,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             </NavLink>
           </div>
 
-          <h1 className="text-custom-100 text-3xl font-extrabold self-center">
+          <h1 className="text-gray-900 text-3xl font-extrabold self-center">
             <NavLink end to="/" className="block">
               Pregma Yields
             </NavLink>
@@ -109,54 +109,24 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           {/* Pages group */}
           <div>
             <ul className="mt-3">
-              {/* Pools */}
-              <li
-                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("pools") && "bg-gray-900"
-                }`}
-              >
-                <NavLink
-                  end
-                  to="/pools"
-                  className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
-                    pathname.includes("pools") && "hover:text-slate-200"
-                  }`}
-                >
-                  <div className="flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                      />
-                    </svg>
-                    <span className="text-custom-100 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Pools
-                    </span>
-                  </div>
-                </NavLink>
-              </li>
               {/* Yields */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("yields") && "bg-gray-900"
+                  pathname.includes("yields") && "bg-gray-900 text-slate-200"
                 }`}
               >
                 <NavLink
                   end
                   to="/yields"
-                  className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
-                    pathname.includes("yields") && "hover:text-slate-200"
+                  className={`block text-gray-900  truncate transition duration-150 ${
+                    pathname.includes("yields") && "text-gray-800"
                   }`}
                 >
-                  <div className="flex items-center">
+                  <div
+                    className={`flex items-center ${
+                      pathname.includes("yields") && "text-gray-800"
+                    }`}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6"
@@ -171,8 +141,54 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
                       />
                     </svg>
-                    <span className="text-custom-100 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                    <span
+                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                        pathname.includes("yields") && "text-gray-800"
+                      }`}
+                    >
                       Yields
+                    </span>
+                  </div>
+                </NavLink>
+              </li>
+              {/* Pools */}
+              <li
+                className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
+                  pathname.includes("pools") && "bg-gray-900"
+                }`}
+              >
+                <NavLink
+                  end
+                  to="/pools"
+                  className={`block text-gray-900 truncate transition duration-150 ${
+                    pathname.includes("pools") && "text-gray-800"
+                  }`}
+                >
+                  <div
+                    className={`flex items-center ${
+                      pathname.includes("pools") && "text-gray-800"
+                    }`}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                    <span
+                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                        pathname.includes("pools") && "text-gray-800"
+                      }`}
+                    >
+                      Pools
                     </span>
                   </div>
                 </NavLink>
@@ -186,11 +202,15 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 <NavLink
                   end
                   to="/bank"
-                  className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
-                    pathname.includes("bank") && "hover:text-slate-200"
+                  className={`block text-gray-900 truncate transition duration-150 ${
+                    pathname.includes("bank") && "text-gray-800"
                   }`}
                 >
-                  <div className="flex items-center">
+                  <div
+                    className={`flex items-center ${
+                      pathname.includes("bank") && "text-gray-800"
+                    }`}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6"
@@ -205,7 +225,11 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                         d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
                       />
                     </svg>
-                    <span className="text-custom-100 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
+                    <span
+                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                        pathname.includes("bank") && "text-gray-800"
+                      }`}
+                    >
                       Bank
                     </span>
                   </div>
