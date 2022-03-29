@@ -85,7 +85,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Pools />} />
+        <Route exact path="/" element={<Yields />} />
         <Route exact path="/yields" element={<Yields />} />
         <Route path="/dashboard/analytics" element={<Analytics />} />
         <Route path="/dashboard/fintech" element={<Fintech />} />
