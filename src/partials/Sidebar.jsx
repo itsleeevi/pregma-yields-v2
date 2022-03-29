@@ -112,7 +112,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               {/* Yields */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("yields") && "bg-gray-900 text-slate-200"
+                  pathname.includes("yields") && "bg-gray-900 text-gray-800"
                 }`}
               >
                 <NavLink
