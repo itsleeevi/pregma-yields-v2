@@ -142,7 +142,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                     </svg>
                     <span
-                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                      className={`text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
                         pathname.includes("yields") && "text-gray-800"
                       }`}
                     >
@@ -184,7 +184,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                     </svg>
                     <span
-                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                      className={`text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
                         pathname.includes("pools") && "text-gray-800"
                       }`}
                     >
@@ -226,7 +226,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                       />
                     </svg>
                     <span
-                      className={`text-gray-900 text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
+                      className={`text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200 ${
                         pathname.includes("bank") && "text-gray-800"
                       }`}
                     >
