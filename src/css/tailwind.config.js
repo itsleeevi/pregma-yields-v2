@@ -14,7 +14,7 @@ module.exports = {
           600: "#666666",
           700: "#4C4C4C",
           800: "#DADADA",
-          900: "#333333",
+          900: "#111111",
         },
         blue: {
           100: "#E6F0FD",
@@ -93,6 +93,7 @@ module.exports = {
   plugins: [
     // eslint-disable-next-line global-require
     require("@tailwindcss/forms"),
+    require("daisyui"),
     // add custom variant for expanding sidebar
     plugin(({ addVariant, e }) => {
       addVariant("sidebar-expanded", ({ modifySelectors, separator }) => {
