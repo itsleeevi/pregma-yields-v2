@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
-import SearchModal from "../components/ModalSearch";
-import Notifications from "../components/DropdownNotifications";
-import Help from "../components/DropdownHelp";
-import UserMenu from "../components/DropdownProfile";
-
 function Header({ sidebarOpen, setSidebarOpen }) {
-  const [searchModalOpen, setSearchModalOpen] = useState(false);
-
   return (
     <header className="sticky top-0 bg-gray-900 z-30">
       <div className="px-4 sm:px-6 lg:px-8">

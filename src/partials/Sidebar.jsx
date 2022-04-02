@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
-import SidebarLinkGroup from "./SidebarLinkGroup";
 import logo from "../images/pregma-yields-logo.png";
 import discord from "../images/discord.png";
 import twitter from "../images/twitter.png";
