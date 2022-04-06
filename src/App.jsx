@@ -19,19 +19,14 @@ function App() {
   }, [location.pathname]); // triggered on route change
 
   useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: "mobile",
-      duration: 750,
-      easing: "ease-out-quart",
-    });
-    // eslint-disable-next-line no-unused-vars
+    AOS.init();
+    AOS.refresh();
   }, []);
 
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Yields />} />
+        <Route exact path="/" element={<Yields props={AOS} />} />
         <Route exact path="/yields" element={<Yields />} />
         <Route path="/pools" element={<Pools />} />
         <Route path="/bank" element={<PageNotFound />} />
