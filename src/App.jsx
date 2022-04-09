@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 import Pools from "./pages/Pools";
 import Yields from "./pages/Yields";
+import Bank from "./pages/Bank";
 import PageNotFound from "./pages/utility/PageNotFound";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <Route exact path="/" element={<Yields props={AOS} />} />
         <Route exact path="/yields" element={<Yields />} />
         <Route path="/pools" element={<Pools />} />
-        <Route path="/bank" element={<PageNotFound />} />
+        <Route path="/bank" element={<Bank />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>

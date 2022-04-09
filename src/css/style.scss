@@ -15,3 +15,47 @@
 // AOS styles
 $aos-distance: 10px;
 @import 'node_modules/aos/src/sass/aos.scss';
+
+.triangles {
+    position: relative;
+    height: 250px;
+    width: 300px;
+
+    &:hover {
+        .triangle:not(:nth-child(4)) {
+            transform: translateX(13px) translateY(-10px) scale(.71);
+        }
+    }
+}
+
+.triangle {
+    position: absolute;
+   
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #fefefe 0%, #36a6ca 60%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    transition: 400ms ease transform;
+    transform-origin: 50% 50%;
+
+    &:nth-child(1) {
+        transform: translateY(-60px) translateX(30px);
+    }
+
+    &:nth-child(2) {
+        transform: translateY(-20px) translateX(-20px);
+    }
+
+    &:nth-child(3) {
+        transform: translateY(10px) translateX(30px);
+    }
+
+ 
+}
