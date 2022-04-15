@@ -36,7 +36,7 @@ const YieldsBg = () => {
               <filter id="shadow">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
                 <feOffset dx="0" dy="0" result="offsetblur" />
-                <feFlood flood-color="#0DB6D4" />
+                <feFlood flood-color="#1e00ff" />
                 <feComposite in2="offsetblur" operator="in" />
                 <feMerge>
                   <feMergeNode />
@@ -44,8 +44,8 @@ const YieldsBg = () => {
                 </feMerge>
               </filter>
               <linearGradient id="grad3">
-                <stop offset="20%" stop-color="#06B6D4" />
-                <stop offset="80%" stop-color="#00739D" />
+                <stop offset="20%" stop-color="#1e00ff" />
+                <stop offset="80%" stop-color="#0d0261" />
               </linearGradient>
             </defs>
             <g fill="none" fill-rule="evenodd">
@@ -91,7 +91,7 @@ const YieldsBg = () => {
               <filter id="shadow">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
                 <feOffset dx="0" dy="0" result="offsetblur" />
-                <feFlood flood-color="#0DB6D4" />
+                <feFlood flood-color="#1e00ff" />
                 <feComposite in2="offsetblur" operator="in" />
                 <feMerge>
                   <feMergeNode />
@@ -99,8 +99,8 @@ const YieldsBg = () => {
                 </feMerge>
               </filter>
               <linearGradient id="grad3">
-                <stop offset="20%" stop-color="#06B6D4" />
-                <stop offset="80%" stop-color="#00739D" />
+                <stop offset="20%" stop-color="#1e00ff" />
+                <stop offset="80%" stop-color="#0d0261" />
               </linearGradient>
             </defs>
             <g fill="none" fill-rule="evenodd">
@@ -143,7 +143,7 @@ const YieldsBg = () => {
               <filter id="shadow">
                 <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
                 <feOffset dx="0" dy="0" result="offsetblur" />
-                <feFlood flood-color="#0DB6D4" />
+                <feFlood flood-color="#1e00ff" />
                 <feComposite in2="offsetblur" operator="in" />
                 <feMerge>
                   <feMergeNode />
@@ -151,8 +151,8 @@ const YieldsBg = () => {
                 </feMerge>
               </filter>
               <linearGradient id="grad3">
-                <stop offset="20%" stop-color="#06B6D4" />
-                <stop offset="80%" stop-color="#00739D" />
+                <stop offset="20%" stop-color="#1e00ff" />
+                <stop offset="80%" stop-color="#0d0261" />
               </linearGradient>
             </defs>
             <g fill="none" fill-rule="evenodd">

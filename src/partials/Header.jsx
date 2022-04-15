@@ -29,7 +29,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
 
           {/* Header: Right side */}
           <div className="flex items-center space-x-3">
-            <button class="bg-transparent hover:bg-blue-900 text-custom-100  font-semibold hover:text-white py-2 px-4 border-2 border-blue-900 hover:border-transparent rounded inline-flex items-center gap-2">
+            <button class="bg-transparent hover:bg-cyan-500 text-custom-100  font-semibold hover:text-white py-2 px-4 border-2 border-cyan-500 hover:border-transparent rounded inline-flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -44,7 +44,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
               </svg>
               <span>PREGMA</span>
             </button>
-            <button className="bg-transparent hover:bg-blue-900 text-custom-100 font-semibold hover:text-white py-2 px-4 border-2 border-blue-900 hover:border-transparent rounded">
+            <button className="bg-transparent hover:bg-cyan-500 text-custom-100 font-semibold hover:text-white py-2 px-4 border-2 border-cyan-500 hover:border-transparent rounded">
               Connect Wallet
             </button>
           </div>

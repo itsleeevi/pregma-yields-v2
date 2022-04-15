@@ -23,8 +23,8 @@ const Bank = () => {
             <div className="max-w mx-auto my-auto px-4">
               <div className="pb-12 md:pb-20">
                 {/* Section header */}
-                <div className="flex justify-center text-center pb-12 md:pb-6 ">
-                  <div className="triangles">
+                <div className="flex justify-center text-center mx-auto xs:ml-20 xs:mt-24">
+                  <div className=" triangles">
                     <div className="triangle"></div>
                     <div className="triangle"></div>
                     <div className="triangle"></div>

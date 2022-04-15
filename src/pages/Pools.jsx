@@ -6,8 +6,12 @@ import Header from "../partials/Header";
 import PoolBox from "../partials/PoolBox";
 import PoolBg from "../partials/PoolBg";
 
+import Waterfall from "../images/waterfall.png";
+import { ChevronUpIcon } from "@heroicons/react/solid";
+
 function Pools() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="bg-gray-900 flex h-screen overflow-hidden">
@@ -20,25 +24,25 @@ function Pools() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <main>
+          <div className="hidden sm:block">
+            <PoolBg />
+          </div>
           <div className="relative flex">
             <div className="max-w mx-auto px-4 sm:px-6 lg:w-8/12 sm:w-11/12">
               <div className="pb-12 md:pb-20 w-full">
                 {/* Section header */}
                 <div className="text-center pb-12 md:pb-6">
-                  <div className="hidden sm:block">
-                    <PoolBg />
-                  </div>
                   <h1
                     className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
                     data-aos="zoom-out"
                   >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-b from-blue-900 to-teal-400">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-t from-gray-800 to-gray-800">
                       Pools
                     </span>
                   </h1>
                   <div className="max-w-3xl mx-auto">
                     <p
-                      className="text-2xl text-custom-100 tracking-wide font-bold lg:mb-8"
+                      className="text-2xl text-custom-100 tracking-wide font-bold lg:mb-12"
                       data-aos="zoom-out"
                       data-aos-delay="150"
                     >
@@ -48,12 +52,10 @@ function Pools() {
                 </div>
                 {/* Hero image */}
                 <div>
-                  <div className="relative flex justify-center mb-8 w-full">
-                    <div className="flex flex-col justify-center w-full">
-                      <PoolBox />
-                      <PoolBox />
-                      <PoolBox />
-                    </div>
+                  <div className="flex lg:flex-row xs:flex-col justify-center w-full rounded gap-16 mt-12">
+                    <PoolBox />
+                    <PoolBox />
+                    <PoolBox />
                   </div>
                 </div>
               </div>

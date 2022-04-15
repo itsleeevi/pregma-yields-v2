@@ -20,7 +20,7 @@ function Yields(props) {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#00739D",
+        main: "#1e00ff",
       },
       secondary: {
         light: "#0066ff",
@@ -58,7 +58,7 @@ function Yields(props) {
                     <div className="flex flex-col justify-center">
                       <div
                         className="bg-gray-900 box-content lg:h-full lg:w-auto p-8 
-                        border-4 border-cyan-500 rounded p-6 shadow-xl shadow-cyan-500/90"
+                        border-4 border-cyan-500 rounded shadow-xl shadow-cyan-500/90 mt-20"
                       >
                         <div className="flex flex-col gap-6">
                           <div className="flex flex-col">
@@ -80,7 +80,7 @@ function Yields(props) {
                               <h1 className="text-2xl text-gray-800 font-medium">
                                 APY
                               </h1>
-                              <h1 className="text-2xl text-blue-900 font-medium">
+                              <h1 className="text-2xl text-cyan-500 font-medium">
                                 200.1%
                               </h1>
                             </div>
@@ -88,7 +88,7 @@ function Yields(props) {
                               <h1 className="text-2xl text-gray-800 font-medium">
                                 Total Value Deposited
                               </h1>
-                              <h1 className="text-2xl text-blue-900 font-medium">
+                              <h1 className="text-2xl text-cyan-500 font-medium">
                                 $60,750,176
                               </h1>
                             </div>
@@ -96,7 +96,7 @@ function Yields(props) {
                               <h1 className="text-2xl text-gray-800 font-medium">
                                 Current Index
                               </h1>
-                              <h1 className="text-2xl text-blue-900 font-medium">
+                              <h1 className="text-2xl text-cyan-500 font-medium">
                                 8.89 PREGMA
                               </h1>
                             </div>
@@ -165,7 +165,7 @@ function Yields(props) {
                                 </div>
 
                                 <button
-                                  className="basis-1/4 hover:bg-transparent bg-blue-900 text-custom-100 font-semibold hover:text-white px-4 border-2 hover:border-blue-900 border- 2 border-transparent rounded h-auto w-full"
+                                  className="basis-1/4 hover:bg-transparent bg-cyan-500 text-custom-100 font-semibold hover:text-white px-4 border-2 hover:border-cyan-500 border- 2 border-transparent rounded h-auto w-full"
                                   onClick={(e) => {
                                     e.preventDefault();
                                     setConnected(true);
